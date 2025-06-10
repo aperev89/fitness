@@ -1,0 +1,1399 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<title>Librería de Ejercicios GPP</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            text-align: center;
+        }
+        #search {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: #4F5D60;
+            border: 1px solid black;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .card img {
+            width: 100%;
+            border-radius: 6px;
+        }
+        .card a {
+            display: block;
+            margin-top: 10px;
+            color: #a8d4ad;
+            text-decoration: none;
+        }
+        .card a:hover {
+            text-decoration: underline;
+        }
+    
+    body {
+        font-family: 'WF Visual Sans', sans-serif;
+        background-color: #f6f7eb;
+        color: #a8d4ad;
+    }
+    .search-container input {
+        border: 2px solid #393e41;
+        background-color: #92b9bd;
+        color: #393e41;
+    }
+    .exercise {
+        background-color: white;
+        border: 1px solid #e94f37;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(57, 62, 65, 0.1);
+    }
+    .exercise h3 {
+        color: #f2f79e;
+    }
+    
+body { background-color: #393E41; color: #f6f7eb; }
+
+.custom-title {
+    font-family: 'Oswald', sans-serif;
+    color: #F2F79E;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&amp;display=swap" rel="stylesheet"/></head>
+<body>
+<h1 class="custom-title">LIBRERÍA DE EJERCICIOS GPP</h1>
+<input id="search" placeholder="Buscar ejercicios..." type="text"/>
+<div class="grid" id="exerciseGrid">
+<div class="card">
+<h3>Caminata Marcha Maletin</h3>
+<img alt="Caminata Marcha Maletin" src="https://img.youtube.com/vi/_df135CJHJk/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=_df135CJHJk" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Backpedal correr en reversa</h3>
+<img alt="Backpedal correr en reversa" src="https://img.youtube.com/vi/_yJ0IxWdBeE/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=_yJ0IxWdBeE" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Frankenstein</h3>
+<img alt="Frankenstein" src="https://img.youtube.com/vi/-aYWIKYblJU/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=-aYWIKYblJU&amp;list=PLOMWztRoFGNK-Ts49RNig3cJF8qg7_Bro&amp;index=6" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Escaladores</h3>
+<img alt="Escaladores" src="https://img.youtube.com/vi/-Dy5j-5EAOw/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=-Dy5j-5EAOw&amp;list=PLOMWztRoFGNJ6r_LyU-dw1D6uDxBQ27Ra&amp;index=2" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>KB bottom hold semihincado</h3>
+<img alt="KB bottom hold semihincado" src="https://img.youtube.com/vi/-F7i9tbt7vg/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=-F7i9tbt7vg" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Monster walk mini band</h3>
+<img alt="Monster walk mini band" src="https://img.youtube.com/vi/-G18NSrbm1A/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=-G18NSrbm1A&amp;list=PLOMWztRoFGNKxqjP1J3EJO6d2HuISlgT2&amp;index=4" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Chin Ups excéntricos</h3>
+<img alt="Chin Ups excéntricos" src="https://img.youtube.com/vi/01K7427pnO8/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=01K7427pnO8" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Sleeper (rotación interna)</h3>
+<img alt="Sleeper (rotación interna)" src="https://img.youtube.com/vi/0QpQF-x3Cxw/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=0QpQF-x3Cxw" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Tiro de pecho</h3>
+<img alt="Tiro de pecho" src="https://img.youtube.com/vi/1ufAANYn-2k/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=1ufAANYn-2k&amp;list=PLOMWztRoFGNKt9twqw74L4Iwjoayrwwqk&amp;index=11" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>1DB Hang Power Snatch</h3>
+<img alt="1DB Hang Power Snatch" src="https://img.youtube.com/vi/2hF01JCRK-c/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=2hF01JCRK-c" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Adductores</h3>
+<img alt="Adductores" src="https://img.youtube.com/vi/3Kiye8_WNjM/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=3Kiye8_WNjM&amp;list=PLOMWztRoFGNKfJykG0VZxyvdRuTQWBAI2&amp;index=11" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Estiramiento pectoral 90 en pared</h3>
+<img alt="Estiramiento pectoral 90 en pared" src="https://img.youtube.com/vi/3oLlEfFyTMU/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=3oLlEfFyTMU&amp;list=PLOMWztRoFGNKfJykG0VZxyvdRuTQWBAI2&amp;index=31" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Rotación tórax en niño</h3>
+<img alt="Rotación tórax en niño" src="https://img.youtube.com/vi/3YdpraE1cPY/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=3YdpraE1cPY&amp;list=PLOMWztRoFGNKfJykG0VZxyvdRuTQWBAI2&amp;index=16" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Perro hacia abajo a plank</h3>
+<img alt="Perro hacia abajo a plank" src="https://img.youtube.com/vi/3ZrACtmNBf8/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=3ZrACtmNBf8" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Full lateral plank</h3>
+<img alt="Full lateral plank" src="https://img.youtube.com/vi/4ONMsjGwAFI/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=4ONMsjGwAFI" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Peso muerto 1 pierna peso corporal</h3>
+<img alt="Peso muerto 1 pierna peso corporal" src="https://img.youtube.com/vi/5_N5Zyo-zRM/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=5_N5Zyo-zRM" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Peso muerto 1 pierna peso corporal</h3>
+<img alt="Peso muerto 1 pierna peso corporal" src="https://img.youtube.com/vi/5_N5Zyo-zRM/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=5_N5Zyo-zRM&amp;list=PLOMWztRoFGNI9Vm4iGTP9A1aT0gpT1IJb&amp;index=7" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>KB swing</h3>
+<img alt="KB swing" src="https://img.youtube.com/vi/56veV5rhU34/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=56veV5rhU34" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>2DB Romanian DL (RDL)</h3>
+<img alt="2DB Romanian DL (RDL)" src="https://img.youtube.com/vi/5INS2HITgto/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=5INS2HITgto" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Molino acostado</h3>
+<img alt="Molino acostado" src="https://img.youtube.com/vi/5K1jhRKq2cc/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=5K1jhRKq2cc&amp;list=PLOMWztRoFGNKfJykG0VZxyvdRuTQWBAI2&amp;index=25" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Respiración diafragmática</h3>
+<img alt="Respiración diafragmática" src="https://img.youtube.com/vi/5q8Z2nyFBT0/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=5q8Z2nyFBT0" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>90/90</h3>
+<img alt="90/90" src="https://img.youtube.com/vi/5RSMXhxCqAE/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=5RSMXhxCqAE&amp;list=PLUJEd8yroD3oGFtmhUQzmLly2_YwbDn9l&amp;index=8" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Skipping</h3>
+<img alt="Skipping" src="https://img.youtube.com/vi/6v0oMik3Ohs/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=6v0oMik3Ohs&amp;list=PLOMWztRoFGNK-Ts49RNig3cJF8qg7_Bro&amp;index=13" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>1DB Press Banca Floor Press</h3>
+<img alt="1DB Press Banca Floor Press" src="https://img.youtube.com/vi/7-RGQVseKT0/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=7-RGQVseKT0" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>1/2 rana</h3>
+<img alt="1/2 rana" src="https://img.youtube.com/vi/7FAxrzEq0vI/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=7FAxrzEq0vI&amp;list=PLOMWztRoFGNKfJykG0VZxyvdRuTQWBAI2&amp;index=23" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Rocking pie contra pared</h3>
+<img alt="Rocking pie contra pared" src="https://img.youtube.com/vi/91PQw27PmBE/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=91PQw27PmBE&amp;list=PLOMWztRoFGNKfJykG0VZxyvdRuTQWBAI2&amp;index=24" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Ts</h3>
+<img alt="Ts" src="https://img.youtube.com/vi/9Yb236AipDU/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=9Yb236AipDU" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Push up</h3>
+<img alt="Push up" src="https://img.youtube.com/vi/a5c0CewWXsQ/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=a5c0CewWXsQ&amp;list=PLOMWztRoFGNJRpYzqBeXncfUYdfU1USoh&amp;index=25" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Carioca</h3>
+<img alt="Carioca" src="https://img.youtube.com/vi/alvOFv99O4k/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=alvOFv99O4k&amp;list=PLOMWztRoFGNK-Ts49RNig3cJF8qg7_Bro&amp;index=15" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Barbell Press</h3>
+<img alt="Barbell Press" src="https://img.youtube.com/vi/AMt08juvVNI/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=AMt08juvVNI" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Peso muerto 1 pierna Loaded 1</h3>
+<img alt="Peso muerto 1 pierna Loaded 1" src="https://img.youtube.com/vi/Apg_SXOkN1Q/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=Apg_SXOkN1Q" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>1-2 Stick</h3>
+<img alt="1-2 Stick" src="https://img.youtube.com/vi/AqmzaO8pQZQ/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=AqmzaO8pQZQ&amp;list=PLOMWztRoFGNJ9xKS93D3r8lGPXleaMfqc&amp;index=4" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>2DB Curtsy Lunge</h3>
+<img alt="2DB Curtsy Lunge" src="https://img.youtube.com/vi/avP5Lwul5Lk/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=avP5Lwul5Lk" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Caminata Marcha Goblet</h3>
+<img alt="Caminata Marcha Goblet" src="https://img.youtube.com/vi/b8phxeYexXo/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=b8phxeYexXo" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Walking core press hold</h3>
+<img alt="Walking core press hold" src="https://img.youtube.com/vi/ba5td_PXjag/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=ba5td_PXjag" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>High Knees</h3>
+<img alt="High Knees" src="https://img.youtube.com/vi/bgKdNa5994U/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=bgKdNa5994U" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Chin up holds</h3>
+<img alt="Chin up holds" src="https://img.youtube.com/vi/bi6Xa6bw82o/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=bi6Xa6bw82o" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Transiciones de 90/90 para caderas</h3>
+<img alt="Transiciones de 90/90 para caderas" src="https://img.youtube.com/vi/BiSCSMqx-rE/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=BiSCSMqx-rE" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>TRX Assited Pull Up</h3>
+<img alt="TRX Assited Pull Up" src="https://img.youtube.com/vi/bjafEVZzuUE/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=bjafEVZzuUE" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Desplante Bulgaro</h3>
+<img alt="Desplante Bulgaro" src="https://img.youtube.com/vi/BM5mEitRVFg/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=BM5mEitRVFg" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Tiro de lado a pared</h3>
+<img alt="Tiro de lado a pared" src="https://img.youtube.com/vi/bML97gx2BiY/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=bML97gx2BiY&amp;list=PLOMWztRoFGNKt9twqw74L4Iwjoayrwwqk&amp;index=9" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Activación psoas con mini band</h3>
+<img alt="Activación psoas con mini band" src="https://img.youtube.com/vi/bTg_fMqCwAA/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=bTg_fMqCwAA&amp;list=PLOMWztRoFGNKxqjP1J3EJO6d2HuISlgT2&amp;index=5" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Cat Cow</h3>
+<img alt="Cat Cow" src="https://img.youtube.com/vi/cA778mQVz2o/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=cA778mQVz2o" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>KB clean</h3>
+<img alt="KB clean" src="https://img.youtube.com/vi/cAjRhLbPrSs/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=cAjRhLbPrSs" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Hip thrust 1 pierna</h3>
+<img alt="Hip thrust 1 pierna" src="https://img.youtube.com/vi/CfYGPqP69So/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=CfYGPqP69So" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>/liga 1 mano de pie</h3>
+<img alt="/liga 1 mano de pie" src="https://img.youtube.com/vi/cLnPheCH2pg/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=cLnPheCH2pg" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Tijeras</h3>
+<img alt="Tijeras" src="https://img.youtube.com/vi/czMXcECH9-w/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=czMXcECH9-w&amp;list=PLOMWztRoFGNJ9xKS93D3r8lGPXleaMfqc&amp;index=2" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>2KB front rack squat</h3>
+<img alt="2KB front rack squat" src="https://img.youtube.com/vi/d8CvVg4bofs/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=d8CvVg4bofs" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Core press Reps &amp; ISO</h3>
+<img alt="Core press Reps &amp; ISO" src="https://img.youtube.com/vi/dEFRNtfF75I/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=dEFRNtfF75I" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Caminata con KB bottom up hold</h3>
+<img alt="Caminata con KB bottom up hold" src="https://img.youtube.com/vi/dhlOF6kYgRI/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=dhlOF6kYgRI" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Colgar</h3>
+<img alt="Colgar" src="https://img.youtube.com/vi/DHPZQ7l11D8/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=DHPZQ7l11D8" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Desplante lateral + Drive peso corporal</h3>
+<img alt="Desplante lateral + Drive peso corporal" src="https://img.youtube.com/vi/dMpcrpB9MXw/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=dMpcrpB9MXw" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Caminata  ck Marcha/  Front rack</h3>
+<img alt="Caminata  ck Marcha/  Front rack" src="https://img.youtube.com/vi/DnqmMvA9PsA/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=DnqmMvA9PsA" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Heel Elevated Goblet</h3>
+<img alt="Heel Elevated Goblet" src="https://img.youtube.com/vi/DwgTJ66n5Cw/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=DwgTJ66n5Cw" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>2DB deficit desplante hacia atrás</h3>
+<img alt="2DB deficit desplante hacia atrás" src="https://img.youtube.com/vi/F_ZQNg2kBLo/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=F_ZQNg2kBLo" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Stability Ball Leg Curls</h3>
+<img alt="Stability Ball Leg Curls" src="https://img.youtube.com/vi/f4WkZFK2P68/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=f4WkZFK2P68" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Estiramiento dorsal ancho</h3>
+<img alt="Estiramiento dorsal ancho" src="https://img.youtube.com/vi/fm6CxsQYVYc/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=fm6CxsQYVYc&amp;list=PLOMWztRoFGNKfJykG0VZxyvdRuTQWBAI2&amp;index=30" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Pie</h3>
+<img alt="Pie" src="https://img.youtube.com/vi/FSD9JPWAHQ4/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=FSD9JPWAHQ4&amp;list=PLOMWztRoFGNKfJykG0VZxyvdRuTQWBAI2&amp;index=3" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Hang Power Cleans Barra</h3>
+<img alt="Hang Power Cleans Barra" src="https://img.youtube.com/vi/fU4HX1-syRA/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=fU4HX1-syRA" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Swimmers</h3>
+<img alt="Swimmers" src="https://img.youtube.com/vi/gAqmXnxQZP8/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=gAqmXnxQZP8&amp;list=PLOMWztRoFGNKEGf1pNT18hPpzZ-r0iqmv&amp;index=7" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>KB Hikes</h3>
+<img alt="KB Hikes" src="https://img.youtube.com/vi/ggjAz17Nrw4/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=ggjAz17Nrw4" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Full plank</h3>
+<img alt="Full plank" src="https://img.youtube.com/vi/gjtLuI56lIc/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=gjtLuI56lIc&amp;list=PLOMWztRoFGNJ6r_LyU-dw1D6uDxBQ27Ra&amp;index=6" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Trote lateral</h3>
+<img alt="Trote lateral" src="https://img.youtube.com/vi/GRfheHW_hiE/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=GRfheHW_hiE&amp;list=PLOMWztRoFGNK-Ts49RNig3cJF8qg7_Bro&amp;index=14" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Posición de combate</h3>
+<img alt="Posición de combate" src="https://img.youtube.com/vi/h6EUxPler7g/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=h6EUxPler7g" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Bench Press</h3>
+<img alt="Bench Press" src="https://img.youtube.com/vi/h9e8u_HNACc/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=h9e8u_HNACc" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Landmine Press</h3>
+<img alt="Landmine Press" src="https://img.youtube.com/vi/hBLV6AV3qMg/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=hBLV6AV3qMg" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Cobra en prono isométrico</h3>
+<img alt="Cobra en prono isométrico" src="https://img.youtube.com/vi/hcTILl3cVkQ/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=hcTILl3cVkQ" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Back Squat</h3>
+<img alt="Back Squat" src="https://img.youtube.com/vi/hdgGDov0M-M/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=hdgGDov0M-M" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Cruzando</h3>
+<img alt="Cruzando" src="https://img.youtube.com/vi/heUJJuHyoK4/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=heUJJuHyoK4&amp;list=PLOMWztRoFGNJ9xKS93D3r8lGPXleaMfqc&amp;index=3" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>1/2 plank hold</h3>
+<img alt="1/2 plank hold" src="https://img.youtube.com/vi/hxS5BlmtQOA/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=hxS5BlmtQOA" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Cuádriceps con alcance</h3>
+<img alt="Cuádriceps con alcance" src="https://img.youtube.com/vi/i2-Njps1MwA/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=i2-Njps1MwA&amp;list=PLOMWztRoFGNK-Ts49RNig3cJF8qg7_Bro&amp;index=4" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Puente 1 pierna elevada</h3>
+<img alt="Puente 1 pierna elevada" src="https://img.youtube.com/vi/I7Zwyzr8COk/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=I7Zwyzr8COk" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>2KB alternating press semihincado</h3>
+<img alt="2KB alternating press semihincado" src="https://img.youtube.com/vi/idd-fqqEj0c/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=idd-fqqEj0c" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Stability Ball “Stir the pot”</h3>
+<img alt="Stability Ball “Stir the pot”" src="https://img.youtube.com/vi/IfOtFv6zz8I/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=IfOtFv6zz8I" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Leg lower</h3>
+<img alt="Leg lower" src="https://img.youtube.com/vi/imbAibwPvlM/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=imbAibwPvlM&amp;list=PLOMWztRoFGNKfJykG0VZxyvdRuTQWBAI2&amp;index=27" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Puente 2 piernas con mini band</h3>
+<img alt="Puente 2 piernas con mini band" src="https://img.youtube.com/vi/iu5nfGD1iRM/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=iu5nfGD1iRM&amp;list=PLOMWztRoFGNKxqjP1J3EJO6d2HuISlgT2&amp;index=6" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Puente 2 piernas con mini band</h3>
+<img alt="Puente 2 piernas con mini band" src="https://img.youtube.com/vi/iu5nfGD1iRM/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=iu5nfGD1iRM&amp;list=PLOMWztRoFGNKxqjP1J3EJO6d2HuISlgT2&amp;index=8" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Elevación de talón con 1 pierna en posición de plank con manos en pared y la otra pierna en  máxima flexión Elevación de  máxima flexión</h3>
+<img alt="Elevación de talón con 1 pierna en posición de plank con manos en pared y la otra pierna en  máxima flexión Elevación de  máxima flexión" src="https://img.youtube.com/vi/iWCYJpCbQXk/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=iWCYJpCbQXk" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Roll Outs</h3>
+<img alt="Roll Outs" src="https://img.youtube.com/vi/iXQDW-B-opI/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=iXQDW-B-opI&amp;list=PLOMWztRoFGNJ6r_LyU-dw1D6uDxBQ27Ra&amp;index=20" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>DB Row Bird Dog</h3>
+<img alt="DB Row Bird Dog" src="https://img.youtube.com/vi/J0gf07wx2ZU/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=J0gf07wx2ZU" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Box jump 2 pies</h3>
+<img alt="Box jump 2 pies" src="https://img.youtube.com/vi/jblQ_oX7Sr0/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=jblQ_oX7Sr0" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Body Saw</h3>
+<img alt="Body Saw" src="https://img.youtube.com/vi/JHmDCAIL7WI/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=JHmDCAIL7WI&amp;list=PLOMWztRoFGNJ6r_LyU-dw1D6uDxBQ27Ra&amp;index=18" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>KB snatch bajando en press</h3>
+<img alt="KB snatch bajando en press" src="https://img.youtube.com/vi/JMNk_BUvpG0/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=JMNk_BUvpG0" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Desplante lateral alternado de lado peso corporal</h3>
+<img alt="Desplante lateral alternado de lado peso corporal" src="https://img.youtube.com/vi/jRE4hebZWyo/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=jRE4hebZWyo" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Pull Ups</h3>
+<img alt="Pull Ups" src="https://img.youtube.com/vi/klQIBA2MLdE/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=klQIBA2MLdE" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Side Lying Hip Lift</h3>
+<img alt="Side Lying Hip Lift" src="https://img.youtube.com/vi/KM_uoLgH7nI/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=KM_uoLgH7nI" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Tiro sobre la cabeza Ball Slam</h3>
+<img alt="Tiro sobre la cabeza Ball Slam" src="https://img.youtube.com/vi/kphXDgquD58/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=kphXDgquD58&amp;list=PLOMWztRoFGNKt9twqw74L4Iwjoayrwwqk&amp;index=12" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Corredores + rotación tórax</h3>
+<img alt="Corredores + rotación tórax" src="https://img.youtube.com/vi/KPsym2G1fzQ/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=KPsym2G1fzQ" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Gateo</h3>
+<img alt="Gateo" src="https://img.youtube.com/vi/kq782262b8g/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=kq782262b8g" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>TRX Rows</h3>
+<img alt="TRX Rows" src="https://img.youtube.com/vi/L6uuXTcazSQ/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=L6uuXTcazSQ" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Dorsal Ancho</h3>
+<img alt="Dorsal Ancho" src="https://img.youtube.com/vi/LEsnDZB2h28/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=LEsnDZB2h28&amp;list=PLOMWztRoFGNKfJykG0VZxyvdRuTQWBAI2&amp;index=12" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>1 Leg squat a banca</h3>
+<img alt="1 Leg squat a banca" src="https://img.youtube.com/vi/Lgvrt5HgBtc/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=Lgvrt5HgBtc" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Bird Dog solo pierna</h3>
+<img alt="Bird Dog solo pierna" src="https://img.youtube.com/vi/LI9gTqHt08Q/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=LI9gTqHt08Q&amp;list=PLOMWztRoFGNJ6r_LyU-dw1D6uDxBQ27Ra&amp;index=3" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>2DB desplante alternando atrás</h3>
+<img alt="2DB desplante alternando atrás" src="https://img.youtube.com/vi/LqvItXnilY4/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=LqvItXnilY4" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Cuadriceps</h3>
+<img alt="Cuadriceps" src="https://img.youtube.com/vi/lrBNluomKAA/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=lrBNluomKAA&amp;list=PLOMWztRoFGNK-Ts49RNig3cJF8qg7_Bro&amp;index=2" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>1KB press de pie</h3>
+<img alt="1KB press de pie" src="https://img.youtube.com/vi/LzHX3BHacYM/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=LzHX3BHacYM" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>1 leg wall sit ISO</h3>
+<img alt="1 leg wall sit ISO" src="https://img.youtube.com/vi/mBaeR3QYEAA/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=mBaeR3QYEAA" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>In In Out Out</h3>
+<img alt="In In Out Out" src="https://img.youtube.com/vi/me-LRIhbIjY/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=me-LRIhbIjY&amp;list=PLOMWztRoFGNJ9xKS93D3r8lGPXleaMfqc" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Push up a block</h3>
+<img alt="Push up a block" src="https://img.youtube.com/vi/Mj1r8H8zdVM/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=Mj1r8H8zdVM" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Full Add plank</h3>
+<img alt="Full Add plank" src="https://img.youtube.com/vi/mlJgYcjxen0/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=mlJgYcjxen0" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Step Up 2DB</h3>
+<img alt="Step Up 2DB" src="https://img.youtube.com/vi/n3VC-9ZcxVI/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=n3VC-9ZcxVI" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Puente 1 pierna</h3>
+<img alt="Puente 1 pierna" src="https://img.youtube.com/vi/N4DY6BxK87U/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=N4DY6BxK87U" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Chinese Plank</h3>
+<img alt="Chinese Plank" src="https://img.youtube.com/vi/nDYT0zUlC2w/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=nDYT0zUlC2w" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Desplante estático (Split Squat)</h3>
+<img alt="Desplante estático (Split Squat)" src="https://img.youtube.com/vi/NFscfUDYh-Q/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=NFscfUDYh-Q" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Couch Stretch</h3>
+<img alt="Couch Stretch" src="https://img.youtube.com/vi/NjXvutyXycA/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=NjXvutyXycA&amp;list=PLOMWztRoFGNKfJykG0VZxyvdRuTQWBAI2&amp;index=29" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>2DB split squat</h3>
+<img alt="2DB split squat" src="https://img.youtube.com/vi/nkXErRurvJw/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=nkXErRurvJw" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Get up con zapato</h3>
+<img alt="Get up con zapato" src="https://img.youtube.com/vi/NKYg70RMwhE/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=NKYg70RMwhE" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Mejor estiramiento del mundo</h3>
+<img alt="Mejor estiramiento del mundo" src="https://img.youtube.com/vi/nLlllkvX6zg/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=nLlllkvX6zg&amp;list=PLOMWztRoFGNKfJykG0VZxyvdRuTQWBAI2&amp;index=1" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Peso corporal</h3>
+<img alt="Peso corporal" src="https://img.youtube.com/vi/nPf6R9-DNJE/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=nPf6R9-DNJE" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Rotación tórax en ½ rana</h3>
+<img alt="Rotación tórax en ½ rana" src="https://img.youtube.com/vi/NT8onMjOEpQ/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=NT8onMjOEpQ&amp;list=PLUJEd8yroD3oGFtmhUQzmLly2_YwbDn9l&amp;index=1" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Corredores</h3>
+<img alt="Corredores" src="https://img.youtube.com/vi/ogkc9SpE1sk/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=ogkc9SpE1sk" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Corredor</h3>
+<img alt="Corredor" src="https://img.youtube.com/vi/ogkc9SpE1sk/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=ogkc9SpE1sk&amp;list=PLOMWztRoFGNKfJykG0VZxyvdRuTQWBAI2&amp;index=19" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Remo alto con cable/liga 1 mano semihincado</h3>
+<img alt="Remo alto con cable/liga 1 mano semihincado" src="https://img.youtube.com/vi/OIzrLliAlic/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=OIzrLliAlic" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>KB Deadlift</h3>
+<img alt="KB Deadlift" src="https://img.youtube.com/vi/OKx4gMhUK9o/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=OKx4gMhUK9o" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Chinear rodilla</h3>
+<img alt="Chinear rodilla" src="https://img.youtube.com/vi/OMEcaHgYUjE/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=OMEcaHgYUjE&amp;list=PLOMWztRoFGNK-Ts49RNig3cJF8qg7_Bro&amp;index=3" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>1DB press semihincado</h3>
+<img alt="1DB press semihincado" src="https://img.youtube.com/vi/OnqwtliEX0Q/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=OnqwtliEX0Q" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Puente con barra</h3>
+<img alt="Puente con barra" src="https://img.youtube.com/vi/ornIXJaF4co/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=ornIXJaF4co" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Estiramiento pantorilla manos en pared rodilla recta y/o flexionada</h3>
+<img alt="Estiramiento pantorilla manos en pared rodilla recta y/o flexionada" src="https://img.youtube.com/vi/ozxqbaOq0b4/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=ozxqbaOq0b4" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Estiramiento dedo gordo y planta pie</h3>
+<img alt="Estiramiento dedo gordo y planta pie" src="https://img.youtube.com/vi/pGNsho8uEFs/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=pGNsho8uEFs" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Desplante lateral peso corporal mismo lado</h3>
+<img alt="Desplante lateral peso corporal mismo lado" src="https://img.youtube.com/vi/PHASlvX7fXo/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=PHASlvX7fXo" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Desplante lateral</h3>
+<img alt="Desplante lateral" src="https://img.youtube.com/vi/PHASlvX7fXo/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=PHASlvX7fXo&amp;list=PLOMWztRoFGNK-Ts49RNig3cJF8qg7_Bro&amp;index=16" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Puente 1 pierna</h3>
+<img alt="Puente 1 pierna" src="https://img.youtube.com/vi/Pp5vhLF7fx8/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=Pp5vhLF7fx8&amp;list=PLOMWztRoFGNKxqjP1J3EJO6d2HuISlgT2&amp;index=9" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Plank Taps</h3>
+<img alt="Plank Taps" src="https://img.youtube.com/vi/Ppqsoyt3FB8/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=Ppqsoyt3FB8" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Caderas / Glúteos</h3>
+<img alt="Caderas / Glúteos" src="https://img.youtube.com/vi/Q5rBpeQLX-U/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=Q5rBpeQLX-U&amp;list=PLOMWztRoFGNKfJykG0VZxyvdRuTQWBAI2&amp;index=9" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Ys</h3>
+<img alt="Ys" src="https://img.youtube.com/vi/Q7ortAhB1kQ/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=Q7ortAhB1kQ" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Scorpión en suelo</h3>
+<img alt="Scorpión en suelo" src="https://img.youtube.com/vi/q9Sllm2jEss/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=q9Sllm2jEss" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Tórax</h3>
+<img alt="Tórax" src="https://img.youtube.com/vi/QmzXwJmAvf8/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=QmzXwJmAvf8&amp;list=PLOMWztRoFGNKfJykG0VZxyvdRuTQWBAI2&amp;index=10" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>1KB front rack squat</h3>
+<img alt="1KB front rack squat" src="https://img.youtube.com/vi/Qu_2qPItFKU/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=Qu_2qPItFKU" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Gusano</h3>
+<img alt="Gusano" src="https://img.youtube.com/vi/qw3tqfT4MTM/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=qw3tqfT4MTM&amp;list=PLOMWztRoFGNK-Ts49RNig3cJF8qg7_Bro&amp;index=5" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Retracción con mini band</h3>
+<img alt="Retracción con mini band" src="https://img.youtube.com/vi/r62Z02FRl6U/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=r62Z02FRl6U&amp;list=PLOMWztRoFGNKxqjP1J3EJO6d2HuISlgT2&amp;index=23" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Plank codos</h3>
+<img alt="Plank codos" src="https://img.youtube.com/vi/rCk2uctmMwc/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=rCk2uctmMwc" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>KB Jumps</h3>
+<img alt="KB Jumps" src="https://img.youtube.com/vi/RfydhW-yZfs/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=RfydhW-yZfs" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Peso muerto barra</h3>
+<img alt="Peso muerto barra" src="https://img.youtube.com/vi/Ri8_WdIdvrY/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=Ri8_WdIdvrY" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Jumping jacks</h3>
+<img alt="Jumping jacks" src="https://img.youtube.com/vi/RQOAemk7JtY/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=RQOAemk7JtY" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Goblet step up</h3>
+<img alt="Goblet step up" src="https://img.youtube.com/vi/rsdrlgv7vyo/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=rsdrlgv7vyo" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>KB swing singles</h3>
+<img alt="KB swing singles" src="https://img.youtube.com/vi/sAaCojYjbyA/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=sAaCojYjbyA" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Staggered RDL</h3>
+<img alt="Staggered RDL" src="https://img.youtube.com/vi/SAItype85TQ/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=SAItype85TQ" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Hollow Regresion (bent)</h3>
+<img alt="Hollow Regresion (bent)" src="https://img.youtube.com/vi/sDZrgWzMmAM/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=sDZrgWzMmAM" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Rocking semihincado</h3>
+<img alt="Rocking semihincado" src="https://img.youtube.com/vi/SHNBX1OJqvI/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=SHNBX1OJqvI&amp;list=PLOMWztRoFGNKEGf1pNT18hPpzZ-r0iqmv&amp;index=13" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Rocking semihincado</h3>
+<img alt="Rocking semihincado" src="https://img.youtube.com/vi/SHNBX1OJqvI/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=SHNBX1OJqvI&amp;list=PLOMWztRoFGNKEGf1pNT18hPpzZ-r0iqmv&amp;index=14" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Band pull aparts liga</h3>
+<img alt="Band pull aparts liga" src="https://img.youtube.com/vi/shQZ-uBinhs/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=shQZ-uBinhs" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Lateral skater jumps</h3>
+<img alt="Lateral skater jumps" src="https://img.youtube.com/vi/sn6x45IzCoE/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=sn6x45IzCoE" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Seal jacks</h3>
+<img alt="Seal jacks" src="https://img.youtube.com/vi/t6csaqoAaq4/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=t6csaqoAaq4" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Talones a glúteos</h3>
+<img alt="Talones a glúteos" src="https://img.youtube.com/vi/taNVSkAs0is/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=taNVSkAs0is&amp;list=PLOMWztRoFGNK-Ts49RNig3cJF8qg7_Bro&amp;index=10" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Plank Rows</h3>
+<img alt="Plank Rows" src="https://img.youtube.com/vi/tfMhawZcKN8/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=tfMhawZcKN8" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>1 leg squat libre</h3>
+<img alt="1 leg squat libre" src="https://img.youtube.com/vi/thbVdtZQtSs/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=thbVdtZQtSs" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Bird Dog</h3>
+<img alt="Bird Dog" src="https://img.youtube.com/vi/TNxruD6a6yM/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=TNxruD6a6yM" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Bird Dog</h3>
+<img alt="Bird Dog" src="https://img.youtube.com/vi/TNxruD6a6yM/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=TNxruD6a6yM&amp;list=PLOMWztRoFGNJ6r_LyU-dw1D6uDxBQ27Ra&amp;index=4" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Skater squat</h3>
+<img alt="Skater squat" src="https://img.youtube.com/vi/TpfDU9je4LI/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=TpfDU9je4LI" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Back extensions banca 45 grados</h3>
+<img alt="Back extensions banca 45 grados" src="https://img.youtube.com/vi/tsP0eYPsoiE/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=tsP0eYPsoiE" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>1/2 Add plank</h3>
+<img alt="1/2 Add plank" src="https://img.youtube.com/vi/TvIEEu7isIU/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=TvIEEu7isIU" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>BORs (Bent Over Rows)</h3>
+<img alt="BORs (Bent Over Rows)" src="https://img.youtube.com/vi/tY5NjxNwUS4/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=tY5NjxNwUS4" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>2DB Press Banca</h3>
+<img alt="2DB Press Banca" src="https://img.youtube.com/vi/U_V0HIgRXAI/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=U_V0HIgRXAI" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Giros duros</h3>
+<img alt="Giros duros" src="https://img.youtube.com/vi/u-YzJvdE3b0/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=u-YzJvdE3b0&amp;list=PLOMWztRoFGNJ6r_LyU-dw1D6uDxBQ27Ra" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Chin Up</h3>
+<img alt="Chin Up" src="https://img.youtube.com/vi/uCWuJbmTfgQ/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=uCWuJbmTfgQ" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>liga 1 mano de pie</h3>
+<img alt="liga 1 mano de pie" src="https://img.youtube.com/vi/ugXnDtHX8MY/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=ugXnDtHX8MY" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Gorilla rows</h3>
+<img alt="Gorilla rows" src="https://img.youtube.com/vi/uwJEf22fYUM/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=uwJEf22fYUM" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Frontal leg swings</h3>
+<img alt="Frontal leg swings" src="https://img.youtube.com/vi/UxXNorHqKLE/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=UxXNorHqKLE" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Curtsy Lunge peso corporal</h3>
+<img alt="Curtsy Lunge peso corporal" src="https://img.youtube.com/vi/V3TDxoHxNvg/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=V3TDxoHxNvg" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Desplante lateral goblet</h3>
+<img alt="Desplante lateral goblet" src="https://img.youtube.com/vi/VBz2LOIv20I/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=VBz2LOIv20I" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Squat Drops (Back Drops)</h3>
+<img alt="Squat Drops (Back Drops)" src="https://img.youtube.com/vi/veVBQNbVspw/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=veVBQNbVspw" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Bicho muerto</h3>
+<img alt="Bicho muerto" src="https://img.youtube.com/vi/VJxdCFbnOg0/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=VJxdCFbnOg0" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Remo 3 puntos</h3>
+<img alt="Remo 3 puntos" src="https://img.youtube.com/vi/VOiGYQMSqyI/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=VOiGYQMSqyI" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Caminata lateral con mini band</h3>
+<img alt="Caminata lateral con mini band" src="https://img.youtube.com/vi/vxPD1qdjKv0/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=vxPD1qdjKv0&amp;list=PLOMWztRoFGNKxqjP1J3EJO6d2HuISlgT2&amp;index=2" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Talones por fuera (RI cadera)</h3>
+<img alt="Talones por fuera (RI cadera)" src="https://img.youtube.com/vi/vy2bxSimYGI/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=vy2bxSimYGI&amp;list=PLOMWztRoFGNK-Ts49RNig3cJF8qg7_Bro&amp;index=11" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Get Up</h3>
+<img alt="Get Up" src="https://img.youtube.com/vi/W1_vMgODB-Q/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=W1_vMgODB-Q" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Puente excéntrico con sliders Curls</h3>
+<img alt="Puente excéntrico con sliders Curls" src="https://img.youtube.com/vi/w1Ud8QYtYYU/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=w1Ud8QYtYYU" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Gato vaca</h3>
+<img alt="Gato vaca" src="https://img.youtube.com/vi/W4bHCzmFGFA/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=W4bHCzmFGFA" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Bicho muerto solo piernas</h3>
+<img alt="Bicho muerto solo piernas" src="https://img.youtube.com/vi/wE154tXex-s/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=wE154tXex-s" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Halo hincado</h3>
+<img alt="Halo hincado" src="https://img.youtube.com/vi/wfJ8tCwCGlc/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=wfJ8tCwCGlc" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Depresión con mini band</h3>
+<img alt="Depresión con mini band" src="https://img.youtube.com/vi/WfTsdv14vT4/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=WfTsdv14vT4&amp;list=PLOMWztRoFGNKxqjP1J3EJO6d2HuISlgT2&amp;index=24" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Step Up peso corporal</h3>
+<img alt="Step Up peso corporal" src="https://img.youtube.com/vi/wMd5ZQxoY-o/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=wMd5ZQxoY-o" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Sprinting jacks</h3>
+<img alt="Sprinting jacks" src="https://img.youtube.com/vi/wTBjEPqkrek/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=wTBjEPqkrek" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Goblet Squat</h3>
+<img alt="Goblet Squat" src="https://img.youtube.com/vi/WtyUO0-ZaSI/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=WtyUO0-ZaSI" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Ws</h3>
+<img alt="Ws" src="https://img.youtube.com/vi/wXY0C4rtZYM/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=wXY0C4rtZYM" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Goblet Split squat</h3>
+<img alt="Goblet Split squat" src="https://img.youtube.com/vi/WxYGRYlq12U/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=WxYGRYlq12U" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Rodilla al pecho</h3>
+<img alt="Rodilla al pecho" src="https://img.youtube.com/vi/XaIyiQaXdT8/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=XaIyiQaXdT8&amp;list=PLOMWztRoFGNK-Ts49RNig3cJF8qg7_Bro" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Push ups escapulares 4 puntos</h3>
+<img alt="Push ups escapulares 4 puntos" src="https://img.youtube.com/vi/XAxFkJPyzbM/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=XAxFkJPyzbM" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Lateral leg swings</h3>
+<img alt="Lateral leg swings" src="https://img.youtube.com/vi/xlvmS-loBLI/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=xlvmS-loBLI" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Hip thrust peso corporal</h3>
+<img alt="Hip thrust peso corporal" src="https://img.youtube.com/vi/xq02eKUP2GE/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=xq02eKUP2GE" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Halo semihincado</h3>
+<img alt="Halo semihincado" src="https://img.youtube.com/vi/xV3_pWvI_00/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=xV3_pWvI_00" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Pull Push</h3>
+<img alt="Pull Push" src="https://img.youtube.com/vi/YiggYLoiLuM/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=YiggYLoiLuM" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>KB snatch</h3>
+<img alt="KB snatch" src="https://img.youtube.com/vi/YTrKP2sAl7s/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=YTrKP2sAl7s" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>TRX Assisted Skater squat</h3>
+<img alt="TRX Assisted Skater squat" src="https://img.youtube.com/vi/YyBeT4WWBk4/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=YyBeT4WWBk4" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Front squat</h3>
+<img alt="Front squat" src="https://img.youtube.com/vi/YZ7OsHx2lhA/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=YZ7OsHx2lhA" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>1DB Push Press</h3>
+<img alt="1DB Push Press" src="https://img.youtube.com/vi/yZikGPDBLJY/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=yZikGPDBLJY" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Hip Thrust barra</h3>
+<img alt="Hip Thrust barra" src="https://img.youtube.com/vi/YZUXElL1yNg/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=YZUXElL1yNg" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Hang Power Snatch BB</h3>
+<img alt="Hang Power Snatch BB" src="https://img.youtube.com/vi/Z4VlCU1KtO8/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=Z4VlCU1KtO8" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Push up declinado</h3>
+<img alt="Push up declinado" src="https://img.youtube.com/vi/Z65r6qaR8i4/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=Z65r6qaR8i4" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Torque con mini band de pie</h3>
+<img alt="Torque con mini band de pie" src="https://img.youtube.com/vi/zG0RUmtHzOk/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=zG0RUmtHzOk&amp;list=PLOMWztRoFGNKxqjP1J3EJO6d2HuISlgT2&amp;index=7" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Pull Up &amp; Chin Up con liga</h3>
+<img alt="Pull Up &amp; Chin Up con liga" src="https://img.youtube.com/vi/ZkODVtsA81Q/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=ZkODVtsA81Q" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>KB high pull</h3>
+<img alt="KB high pull" src="https://img.youtube.com/vi/ZpmxEe2yIqg/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=ZpmxEe2yIqg" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Cuádriceps (muslo)</h3>
+<img alt="Cuádriceps (muslo)" src="https://img.youtube.com/vi/zTveNf65K1A/0.jpg"/>
+<a href="https://www.youtube.com/watch?v=zTveNf65K1A&amp;list=PLOMWztRoFGNKfJykG0VZxyvdRuTQWBAI2&amp;index=7" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Chinese plank en suelo con 2 piernas</h3>
+<img alt="Chinese plank en suelo con 2 piernas" src="https://img.youtube.com/vi/_UjXqac_OM0/0.jpg"/>
+<a href="https://youtu.be/_UjXqac_OM0" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Chinese Plank</h3>
+<img alt="Chinese Plank" src="https://img.youtube.com/vi/_UjXqac_OM0/0.jpg"/>
+<a href="https://youtu.be/_UjXqac_OM0?si=teynlIdhlohq6NkZ" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Frankenstein</h3>
+<img alt="Frankenstein" src="https://img.youtube.com/vi/-aYWIKYblJU/0.jpg"/>
+<a href="https://youtu.be/-aYWIKYblJU?si=GTy3jwlEob-1m7jQ" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Escaladores LENTOS en posición de plank</h3>
+<img alt="Escaladores LENTOS en posición de plank" src="https://img.youtube.com/vi/-Dy5j-5EAOw/0.jpg"/>
+<a href="https://youtu.be/-Dy5j-5EAOw?si=ZpShYBFXPNti4_Zg" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Pallof o core press isométrico</h3>
+<img alt="Pallof o core press isométrico" src="https://img.youtube.com/vi/-HgOgyzutiw/0.jpg"/>
+<a href="https://youtu.be/-HgOgyzutiw?si=M4lpQmP8go772pWq" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Transiciones lentas de perro hacia abajo a plank con manos en pared</h3>
+<img alt="Transiciones lentas de perro hacia abajo a plank con manos en pared" src="https://img.youtube.com/vi/1FzXp6i4c7g/0.jpg"/>
+<a href="https://youtu.be/1FzXp6i4c7g?si=QdTCqrH6oxUXyo8w" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Alcances en plank en codos</h3>
+<img alt="Alcances en plank en codos" src="https://img.youtube.com/vi/2vbt87fZ46w/0.jpg"/>
+<a href="https://youtu.be/2vbt87fZ46w" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Foam roller en adductores</h3>
+<img alt="Foam roller en adductores" src="https://img.youtube.com/vi/3Kiye8_WNjM/0.jpg"/>
+<a href="https://youtu.be/3Kiye8_WNjM?si=DtFE8cbc1ibtnKZS" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Estiramiento pasivo de pectoral</h3>
+<img alt="Estiramiento pasivo de pectoral" src="https://img.youtube.com/vi/3oLlEfFyTMU/0.jpg"/>
+<a href="https://youtu.be/3oLlEfFyTMU?si=DJVFBMEGOizTAeTu" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Rotación de tórax en semihincado</h3>
+<img alt="Rotación de tórax en semihincado" src="https://img.youtube.com/vi/3s3Ww003PGc/0.jpg"/>
+<a href="https://youtu.be/3s3Ww003PGc" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Peso muerto kettlebell</h3>
+<img alt="Peso muerto kettlebell" src="https://img.youtube.com/vi/4dA1_4BTS3M/0.jpg"/>
+<a href="https://youtu.be/4dA1_4BTS3M" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Transiciones lentas de perro hacia abajo a plank</h3>
+<img alt="Transiciones lentas de perro hacia abajo a plank" src="https://img.youtube.com/vi/4Lod28Vu-T8/0.jpg"/>
+<a href="https://youtu.be/4Lod28Vu-T8?si=ocFGKo5InQ1-LDIg" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Transición de plank en codos a full plank</h3>
+<img alt="Transición de plank en codos a full plank" src="https://img.youtube.com/vi/4LOepjMCz5A/0.jpg"/>
+<a href="https://youtu.be/4LOepjMCz5A?si=1CuqJ82SxRqzV3EJ" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Levantamiento activo de la pierna</h3>
+<img alt="Levantamiento activo de la pierna" src="https://img.youtube.com/vi/4TdiQS93oVc/0.jpg"/>
+<a href="https://youtu.be/4TdiQS93oVc?si=tsh6epzrhycjNrw7" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Rotación de tórax con foam roller</h3>
+<img alt="Rotación de tórax con foam roller" src="https://img.youtube.com/vi/5K1jhRKq2cc/0.jpg"/>
+<a href="https://youtu.be/5K1jhRKq2cc?si=7YfDEFt2y0EuOSQ-" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Alcance con 1 pierna (practica de bisagras con peso corporal)</h3>
+<img alt="Alcance con 1 pierna (practica de bisagras con peso corporal)" src="https://img.youtube.com/vi/6QQ_pxsfGIA/0.jpg"/>
+<a href="https://youtu.be/6QQ_pxsfGIA" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Alcance con 1 pierna</h3>
+<img alt="Alcance con 1 pierna" src="https://img.youtube.com/vi/6QQ_pxsfGIA/0.jpg"/>
+<a href="https://youtu.be/6QQ_pxsfGIA?si=FYx4B_UhccE3vJm-" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Plank en codos</h3>
+<img alt="Plank en codos" src="https://img.youtube.com/vi/A_Q5ypW1yP8/0.jpg"/>
+<a href="https://youtu.be/A_Q5ypW1yP8" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Plank en codos</h3>
+<img alt="Plank en codos" src="https://img.youtube.com/vi/A_Q5ypW1yP8/0.jpg"/>
+<a href="https://youtu.be/A_Q5ypW1yP8?si=CAw2FeTwWs3GNKah" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Desplante isométrico (Iso Hold Split Squat)</h3>
+<img alt="Desplante isométrico (Iso Hold Split Squat)" src="https://img.youtube.com/vi/aE9G5ZTTZ1A/0.jpg"/>
+<a href="https://youtu.be/aE9G5ZTTZ1A" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Escorpión en el suelo</h3>
+<img alt="Escorpión en el suelo" src="https://img.youtube.com/vi/Ayhw5LctLjk/0.jpg"/>
+<a href="https://youtu.be/Ayhw5LctLjk?si=TT3bq-esEpk7tx7o" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Caminata lateral con mini band</h3>
+<img alt="Caminata lateral con mini band" src="https://img.youtube.com/vi/B61XSwpnorI/0.jpg"/>
+<a href="https://youtu.be/B61XSwpnorI?si=6qUIpZkNsvDMWxDU" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Transiciones lado a lado del estiramiento 90/90</h3>
+<img alt="Transiciones lado a lado del estiramiento 90/90" src="https://img.youtube.com/vi/BiSCSMqx-rE/0.jpg"/>
+<a href="https://youtu.be/BiSCSMqx-rE?si=mXl2qtkniCuj5tHO" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Pallof o core press</h3>
+<img alt="Pallof o core press" src="https://img.youtube.com/vi/dEFRNtfF75I/0.jpg"/>
+<a href="https://youtu.be/dEFRNtfF75I?si=os5EvRP57Basb1Ep" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Marcha LENTA de maletín</h3>
+<img alt="Marcha LENTA de maletín" src="https://img.youtube.com/vi/dYYjyJNvU_8/0.jpg"/>
+<a href="https://youtu.be/dYYjyJNvU_8?si=CJ6LGW1SdmI9WGx3" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Puente 1 pierna isométrico</h3>
+<img alt="Puente 1 pierna isométrico" src="https://img.youtube.com/vi/e4uvgAHmS5I/0.jpg"/>
+<a href="https://youtu.be/e4uvgAHmS5I?si=h95erTY78mmTr7yc" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Estiramiento pasivo dorsal ancho</h3>
+<img alt="Estiramiento pasivo dorsal ancho" src="https://img.youtube.com/vi/fm6CxsQYVYc/0.jpg"/>
+<a href="https://youtu.be/fm6CxsQYVYc?si=lLpNwC0rZR_K9a10" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Ball Rolling planta del pie</h3>
+<img alt="Ball Rolling planta del pie" src="https://img.youtube.com/vi/FSD9JPWAHQ4/0.jpg"/>
+<a href="https://youtu.be/FSD9JPWAHQ4?si=56HBPHBVwdBHTN23" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Marcha en goblet con kettlebell</h3>
+<img alt="Marcha en goblet con kettlebell" src="https://img.youtube.com/vi/G1Yzz23b3us/0.jpg"/>
+<a href="https://youtu.be/G1Yzz23b3us" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Push ups:</h3>
+<img alt="Push ups:" src="https://img.youtube.com/vi/gaXrdN-FMtY/0.jpg"/>
+<a href="https://youtu.be/gaXrdN-FMtY" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Kettlebell goblet clean</h3>
+<img alt="Kettlebell goblet clean" src="https://img.youtube.com/vi/IkSi2nvYZvY/0.jpg"/>
+<a href="https://youtu.be/IkSi2nvYZvY" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Elevación de talón atlética</h3>
+<img alt="Elevación de talón atlética" src="https://img.youtube.com/vi/iWCYJpCbQXk/0.jpg"/>
+<a href="https://youtu.be/iWCYJpCbQXk?si=C5icKEdSirWz5b6-" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Foam roller en pantorrillas</h3>
+<img alt="Foam roller en pantorrillas" src="https://img.youtube.com/vi/koFnTAvTNAU/0.jpg"/>
+<a href="https://youtu.be/koFnTAvTNAU?si=Du_p3ziT_2x0jtO1" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Kettlebell dead swing (singles)</h3>
+<img alt="Kettlebell dead swing (singles)" src="https://img.youtube.com/vi/kQg17RZz3Yw/0.jpg"/>
+<a href="https://youtu.be/kQg17RZz3Yw" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Hip thrust 1 pierna isométrico</h3>
+<img alt="Hip thrust 1 pierna isométrico" src="https://img.youtube.com/vi/krVM28NSRWE/0.jpg"/>
+<a href="https://youtu.be/krVM28NSRWE" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Foam roller en dorsal ancho</h3>
+<img alt="Foam roller en dorsal ancho" src="https://img.youtube.com/vi/LEsnDZB2h28/0.jpg"/>
+<a href="https://youtu.be/LEsnDZB2h28?si=_eQAwKNYrKCjjtvP" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Push ups escapulares</h3>
+<img alt="Push ups escapulares" src="https://img.youtube.com/vi/NKekqeudgWs/0.jpg"/>
+<a href="https://youtu.be/NKekqeudgWs?si=iqqkA0clG_7Idky4" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Corredores con rotación de tórax</h3>
+<img alt="Corredores con rotación de tórax" src="https://img.youtube.com/vi/NV1rNnO9HuY/0.jpg"/>
+<a href="https://youtu.be/NV1rNnO9HuY?si=w8MckkuLiEqRw9au" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Pogo jumps</h3>
+<img alt="Pogo jumps" src="https://img.youtube.com/vi/NvqQkiQZnJY/0.jpg"/>
+<a href="https://youtu.be/NvqQkiQZnJY" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Elevaciones de talón con déficit sobre una grada</h3>
+<img alt="Elevaciones de talón con déficit sobre una grada" src="https://img.youtube.com/vi/OBzVJ9anSzs/0.jpg"/>
+<a href="https://youtu.be/OBzVJ9anSzs?si=WTH9k3VSyeMetOB0" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Get up con peso corporal</h3>
+<img alt="Get up con peso corporal" src="https://img.youtube.com/vi/ogYOQhXqoNg/0.jpg"/>
+<a href="https://youtu.be/ogYOQhXqoNg" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Sentadilla goblet con kettlebell</h3>
+<img alt="Sentadilla goblet con kettlebell" src="https://img.youtube.com/vi/oZYP7Gex2c4/0.jpg"/>
+<a href="https://youtu.be/oZYP7Gex2c4" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Sentadilla goblet con KB</h3>
+<img alt="Sentadilla goblet con KB" src="https://img.youtube.com/vi/oZYP7Gex2c4/0.jpg"/>
+<a href="https://youtu.be/oZYP7Gex2c4?si=rWBaoFBI-0NsSJpa" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Alcance con 2 (practica de bisagras con peso corporal)</h3>
+<img alt="Alcance con 2 (practica de bisagras con peso corporal)" src="https://img.youtube.com/vi/PCiot_hLrJE/0.jpg"/>
+<a href="https://youtu.be/PCiot_hLrJE" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Alcances con dos piernas</h3>
+<img alt="Alcances con dos piernas" src="https://img.youtube.com/vi/PCiot_hLrJE/0.jpg"/>
+<a href="https://youtu.be/PCiot_hLrJE?si=hjBhJo1iCd4ikY30" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Gorilla rows</h3>
+<img alt="Gorilla rows" src="https://img.youtube.com/vi/pigRQwreuq4/0.jpg"/>
+<a href="https://youtu.be/pigRQwreuq4" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Foam roller en cadera (glúteo)</h3>
+<img alt="Foam roller en cadera (glúteo)" src="https://img.youtube.com/vi/Q5rBpeQLX-U/0.jpg"/>
+<a href="https://youtu.be/Q5rBpeQLX-U?si=_ZX4tK2j8zaE-wM4" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Foam roller en tórax</h3>
+<img alt="Foam roller en tórax" src="https://img.youtube.com/vi/QmzXwJmAvf8/0.jpg"/>
+<a href="https://youtu.be/QmzXwJmAvf8?si=ffRDBoFPiAmvnack" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Crunch isométrico + bicho muerto solo con piernas</h3>
+<img alt="Crunch isométrico + bicho muerto solo con piernas" src="https://img.youtube.com/vi/qo75V8xA-y8/0.jpg"/>
+<a href="https://youtu.be/qo75V8xA-y8?si=jgS2YeOkNY5GON4L" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Gusano</h3>
+<img alt="Gusano" src="https://img.youtube.com/vi/qw3tqfT4MTM/0.jpg"/>
+<a href="https://youtu.be/qw3tqfT4MTM?si=0jx7-yG9vkk69AEF" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Rocking semihincado</h3>
+<img alt="Rocking semihincado" src="https://img.youtube.com/vi/SHNBX1OJqvI/0.jpg"/>
+<a href="https://youtu.be/SHNBX1OJqvI?si=g_4wbcbz7K328yJ1" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>A skip</h3>
+<img alt="A skip" src="https://img.youtube.com/vi/T4b0ACboGJQ/0.jpg"/>
+<a href="https://youtu.be/T4b0ACboGJQ" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Estiramiento 90/90 cadera</h3>
+<img alt="Estiramiento 90/90 cadera" src="https://img.youtube.com/vi/t4Zz6-aG8Iw/0.jpg"/>
+<a href="https://youtu.be/t4Zz6-aG8Iw?si=tAOey0PQ4pimLmFg" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Kettlebell hike</h3>
+<img alt="Kettlebell hike" src="https://img.youtube.com/vi/txbFaMZvGI8/0.jpg"/>
+<a href="https://youtu.be/txbFaMZvGI8" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Fortalecimiento de psoas con mini band en posición de bicho muerto</h3>
+<img alt="Fortalecimiento de psoas con mini band en posición de bicho muerto" src="https://img.youtube.com/vi/VVLcpcVv964/0.jpg"/>
+<a href="https://youtu.be/VVLcpcVv964?si=nAFBajhfnpyMsqq-" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Marcha de mesero con kettlebell</h3>
+<img alt="Marcha de mesero con kettlebell" src="https://img.youtube.com/vi/VvZUEEHkdQ0/0.jpg"/>
+<a href="https://youtu.be/VvZUEEHkdQ0" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>March de mesero</h3>
+<img alt="March de mesero" src="https://img.youtube.com/vi/VvZUEEHkdQ0/0.jpg"/>
+<a href="https://youtu.be/VvZUEEHkdQ0?si=ipXcbexBY3JYe2aK" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Gato vaca</h3>
+<img alt="Gato vaca" src="https://img.youtube.com/vi/W4bHCzmFGFA/0.jpg"/>
+<a href="https://youtu.be/W4bHCzmFGFA?si=Whiv_Io4GgQ7d1wq" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Activación escapular con alcance sobre la cabeza</h3>
+<img alt="Activación escapular con alcance sobre la cabeza" src="https://img.youtube.com/vi/WfTsdv14vT4/0.jpg"/>
+<a href="https://youtu.be/WfTsdv14vT4?si=qzKSttna7gwR_gQm" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Marcha en rack con kettlebell</h3>
+<img alt="Marcha en rack con kettlebell" src="https://img.youtube.com/vi/WiXQIR8xXNg/0.jpg"/>
+<a href="https://youtu.be/WiXQIR8xXNg" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Hinge drop</h3>
+<img alt="Hinge drop" src="https://img.youtube.com/vi/wV2zyDO4bpc/0.jpg"/>
+<a href="https://youtu.be/wV2zyDO4bpc" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Ws escapulares</h3>
+<img alt="Ws escapulares" src="https://img.youtube.com/vi/wXY0C4rtZYM/0.jpg"/>
+<a href="https://youtu.be/wXY0C4rtZYM?si=OsTHIWvEnYeHfVfI" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>De pie abrazar rodilla al pecho (dinámico)</h3>
+<img alt="De pie abrazar rodilla al pecho (dinámico)" src="https://img.youtube.com/vi/XaIyiQaXdT8/0.jpg"/>
+<a href="https://youtu.be/XaIyiQaXdT8?si=PlBiyHkxv_devfgS" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Rocking o “balanceo” semihincado para movilidad de tobillo y cadera</h3>
+<img alt="Rocking o “balanceo” semihincado para movilidad de tobillo y cadera" src="https://img.youtube.com/vi/XtsgkirHYpk/0.jpg"/>
+<a href="https://youtu.be/XtsgkirHYpk" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Halo semihincado</h3>
+<img alt="Halo semihincado" src="https://img.youtube.com/vi/xV3_pWvI_00/0.jpg"/>
+<a href="https://youtu.be/xV3_pWvI_00?si=YJ9yIT15XC6gARo9" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>Press hombro 1 mano kettlebell semihincado</h3>
+<img alt="Press hombro 1 mano kettlebell semihincado" src="https://img.youtube.com/vi/xwO4IS_E1VQ/0.jpg"/>
+<a href="https://youtu.be/xwO4IS_E1VQ" target="_blank">Ver video</a>
+</div>
+<div class="card">
+<h3>“Floor angels” en posición de bicho muerto</h3>
+<img alt="“Floor angels” en posición de bicho muerto" src="https://img.youtube.com/vi/ZtcpBztji78/0.jpg"/>
+<a href="https://youtu.be/ZtcpBztji78?si=Gm-rhvbQdlrq_ud" target="_blank">Ver video</a>
+</div>
+</div>
+<script>
+        const searchInput = document.getElementById('search');
+        searchInput.addEventListener('input', function() {
+            const filter = searchInput.value.toLowerCase();
+            const cards = document.querySelectorAll('.card');
+            cards.forEach(card => {
+                const title = card.querySelector('h3').textContent.toLowerCase();
+                card.style.display = title.includes(filter) ? '' : 'none';
+            });
+        });
+    </script>
+</body>
+</html>
